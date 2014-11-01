@@ -49,7 +49,7 @@ public class LogoTest extends Application {
         
         PointLight light = new PointLight(Color.WHITESMOKE);
         light.setTranslateY(-250);
-        light.translateZProperty().bind(logo.translateZProperty().subtract(400));
+        light.translateZProperty().bind(logo.translateZProperty().subtract(800));
         
         root3D.getChildren().addAll(cam.getWrapper(), logo, light);
         
