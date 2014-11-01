@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: darkgray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tweetwallfx.jdub1581.TestController">
+   <children>
+      <SubScene fx:id="subScene" height="372.0" width="411.0">         
+        <root>
+          <Group />
+        </root>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.8333333333333334" startX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#6e6e6e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </SubScene>
+      <VBox fx:id="sliders" layoutX="486.0" layoutY="14.0" prefHeight="365.0" prefWidth="150.0" spacing="5.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label focusTraversable="false" text="Frequency" />
+                  <Slider fx:id="freqSlider" blockIncrement="0.1" focusTraversable="false" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0">
+               <children>
+                  <Label focusTraversable="false" text="Period" />
+                  <Slider fx:id="perSlider" blockIncrement="0.1" focusTraversable="false" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="46.0">
+               <children>
+                  <Label focusTraversable="false" text="Wavelength" />
+                  <Slider fx:id="zSlider" blockIncrement="0.1" focusTraversable="false" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="82.0">
+               <children>
+                  <Label focusTraversable="false" text="Amplitude" />
+                  <Slider fx:id="rdSlider" blockIncrement="1.0" focusTraversable="false" max="200.0" min="1.0" value="75.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
